@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/homepage.css">
+  <link rel="stylesheet" href="../css/choss.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>Chossen Page</title>
+
+</head>
+
+<body>
+  <!--blog nav start -->
+  <div class="mainHome">
+    <nav id="nav" role="navigation">
+      <div id="menuToggle">
+
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="../index.html#scrollHome">
+            <li>Showrooms</li>
+          </a>
+          <a href="/html/choss.html">
+            <li>Sauna's</li>
+          </a>
+                    <a href="/html/about.html">
+            <li>About Us</li>
+          </a>
+                    <a href="/html/Blog-CoomingSoon.html">
+            <li>Blog</li>
+          </a>
+          <a href="/html/reference.html">
+            <li>Referenties</li>
+          </a>
+          <a onclick="contactModalF()" href="#">
+            <li>Contact</li>
+          </a>
+
+
+          <div class="socialIcons">
+            <div class="facebook" onclick="location.href='https://www.facebook.com/Saunakoning-155835287856773/'">
+              <a href=""></a>
+            </div>
+            <div class="insta" onclick="location.href='https://www.instagram.com/saunakoning/'">
+
+            </div>
+            <div class="linkedin" onclick="location.href='https://nl.linkedin.com/in/michiel-broker-0a1a95a'">
+            </div>
+          </div>
+        </ul>
+      </div>
+
+    <!--blog nav end -->
+    
+      <a href="../index.html"><img class="headerLogo" src="../assets/images/headerLogo.png"></a>
+      <img class="headerIcon1 headerIcon" src="../assets/images/cartIcon.svg">
+      <img class="headerIcon2 headerIcon" src="../assets/images/personIconsvg.svg">
+
+    </nav>
+    <div class="leftC">
+      <div class="leftC2">
+        <a href="finsesaunas.html" class="buttonC">FINSE SAUNA'S</a>
+      </div>
+    </div>
+
+    <div class="rightC">
+      <div class="rightC2">
+        <a href="#" class="buttonC">INFRAROOD CABINE</a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- The Modal for contact start -->
+  <div class="modalContact" id="modalContact">
+    <div id="waalreModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeContact" class="close">×</span>
+
+        <div class="contact-container">
+
+          <div class="right-col">
+
+            <h1>Contact us!</h1>
+            <p>Contact us by filling in this form or call us!</p>
+
+            <form id="contact-form" method="post">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+              <input type="tel" id="email" name="phone" placeholder="Your Phone Number" required>
+              <label for="message">Question</label>
+              <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+              <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button>
+              <!--</a>-->
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+          </div>
+          <img class="teamSK" src="../assets/images/teamSK.jpg">
+          <div class="klantenService">
+            <h1>Klanten Service</h1>
+            <p>Telefonisch contact:</p>
+            <br>
+            <p>NL: <a class="phonenumber" href="tel:040 707 4549">040 707 4549</a></p>
+            <p>BE: <a class="phonenumber" href="tel:033 36 74 75">033 36 74 75</a></p>
+            <br>
+            <div class="tijden">
+              <p>Ma-Wo: <a href="">09:00 - 17:00</a></p>
+              <p>Do: <a href="">Gesloten</a></p>
+              <p>Vr: <a href="">09:00 - 17:00</a></p>
+              <p>Za: <a href="">10:00 - 17:00</a></p>
+              <p>Zo: <a href="">11:00 - 17:00</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal for contact end -->
+
+  <div class="footer">
+    <footer class="footer-wrapper">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>Sauna Assortiment</h4>
+            <ul>
+              <li><a href="#">Finse binnen sauna's</a></li>
+              <li><a href="#">Finse buiten sauna's</a></li>
+              <li><a href="#">Infrarood sauna's</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Handige pagina's</h4>
+            <ul>
+              <li><a href="#">Algemene sauna</a></li>
+              <li><a href="#">Informatie</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Algemene voorwaarden</a></li>
+              <li><a href="#">Privacy beleid</a></li>
+              <li><a href="#">Leverings Informatie</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>onze showrooms</h4>
+            <ul>
+              <li><a href="#">Showroom Amersfoort</a></li>
+              <li><a href="#">Showroom Alphen a.d. Rijn</a></li>
+              <li><a href="#">Showroom Wijchen</a></li>
+              <li><a href="#">Showroom Waalre</a></li>
+              <li><a href="#">Showroom Waregem (BE)</a></li>
+              <li><a href="#">Showroom Zandhoven (BE)</a></li>
+              <li><a href="#">Showroom Genk (BE)</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>DIRECT CONTACT</h4>
+            <ul>
+              <li><a href="#">Bel direct voor persoonlijk advies of bezoek onze showroom.</a></li>
+              <li><a href="#">NL 040 - 707 45 49</a></li>
+              <li><a href="#">BE 033 367 4575</a></li>
+
+            </ul>
+          </div>
+          <div class="footer-column">
+            <div class="card-links">
+              <a href="#"><i class="fab fa-cc-visa" style="font-size: 25px;"></i></a>
+              <a href="#"><i class="fab fa-cc-stripe" style="font-size: 25px;"></i></a>
+              <a href="#"><i class="fab fa-cc-paypal" style="font-size: 25px;"></i></a>
+              <a href="#"><i class="fab fa-cc-mastercard" style="font-size: 25px;"></i></a>
+              <a href="#"><i class="fab fa-cc-amex" style="font-size: 25px;"></i></a>
+              <a href="#"><i class="fab fa-cc-discover" style="font-size: 25px;"></i></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <!-- contact pop up js-->
+  <script src="../scripts/contactPopUp.js"></script>
+  <!-- nav bar js link-->
+  <script src="../scripts/navBar.js"></script>
+
+</body>
+
+</html>

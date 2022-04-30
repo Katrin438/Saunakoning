@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'NimbusBold';
+  src: url('../assets/fonts/NimbusBold.otf');
+}
+
+@font-face {
+  font-family: 'NimbusLight';
+  src: url('../assets/fonts/NimbusLight.ttf');
+}
+
+@font-face {
+  font-family: 'NimbusRegita';
+  src: url('../assets/fonts/NimbusRegita.otf');
+}
+
+.firstContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+}
+
+.leftC {
+  width: 50%;
+  float: left;
+  background-image: url(../assets/images/11.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.leftC2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.rightC {
+  width: 50%;
+  float: right;
+  background-image: url(../assets/images/21.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rightC2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.buttonC {
+
+  font-family: 'NimbusLight';
+  text-align: center;
+  padding-bottom: -3%;
+  width: 50%;
+  background-color: rgba(255, 89, 36, 1);
+  color: rgb(255, 255, 255);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 123%;
+  text-align: center;
+  vertical-align: center;
+  transition: .5s;
+  border-radius: 2rem;
+  box-shadow: 2px 3px;
+}
+
+.buttonC:hover {
+  background-color: rgba(237, 203, 147.1);
+  color: rgb(0, 0, 0);
+  transform: scale(0.95);
+}
+
+
+/* Mobile version */
+@media screen and (max-width:364px){
+  .buttonC{
+    font-size: 20px;
+  }
+
+}
+@media screen and (max-width: 600px) {
+
+  .headerIcon1 {
+    width: 7%;
+    right: 15%;
+  }
+
+  .headerIcon2 {
+    width: 7%;
+    right: 4%;
+  }
+
+  .teamSK {
+    width: 500px;
+  }
+
+  .headerLogo {
+    width: 11%;
+  }
+
+  .buttonC {
+
+    font-family: 'NimbusLight';
+    text-align: center;
+    width: 90%;
+    height: 6%;
+    background-color: rgb(228, 228, 228);
+    color: rgb(41, 41, 41);
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: center;
+    transition: .5s;
+    box-shadow: 2px 3px;
+  }
+
+
+  .leftC {
+    width: 50%;
+    float: left;
+    background-image: url(../assets/images/11.png);
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .leftC2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+
+  }
+
+  .rightC {
+    width: 50%;
+    float: right;
+    background-image: url(../assets/images/21.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .rightC2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+}

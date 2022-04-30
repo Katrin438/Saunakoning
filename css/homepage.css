@@ -1,0 +1,1316 @@
+@font-face {
+  font-family: 'NimbusBold';
+  src: url('../assets/fonts/NimbusBold.otf');
+}
+
+@font-face {
+  font-family: 'NimbusLight';
+  src: url('../assets/fonts/NimbusLight.ttf');
+}
+
+@font-face {
+  font-family: 'NimbusRegita';
+  src: url('../assets/fonts/NimbusRegita.otf');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#scrollHome {
+  position: absolute;
+  bottom: 14.9%;
+  left: 0px;
+  z-index: 100;
+
+}
+
+/*nav bar start */
+#nav {
+  width: 100%;
+  height: 15%;
+
+  position: fixed;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.scroll {
+  transition: background-color 1s;
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.headerLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 3.5%;
+  padding-top: 2.3%;
+  opacity: 0.9;
+}
+
+.headerIcon1 {
+  float: right;
+  width: 2.2%;
+  height: 31%;
+  position: absolute;
+  right: 8%;
+  top: 50px;
+  opacity: 0.9;
+}
+
+.headerIcon2 {
+  float: right;
+  width: 2.2%;
+  height: 31%;
+  position: absolute;
+  right: 4.5%;
+  top: 50px;
+  opacity: 0.9;
+}
+
+.headerIcon:hover {
+  cursor: pointer;
+}
+
+.mainHome {
+  width: 100%;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  position: relative;
+
+}
+
+/*nav bar end */
+
+
+/*menu start */
+
+.socialIcons {
+  height: 10%;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.facebook {
+  height: 100%;
+  width: 33.333%;
+  float: center;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url(../assets/images/facebookIcon.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  float: left;
+}
+
+.insta {
+  height: 100%;
+  width: 33.333%;
+  float: Center;
+  background-image: url(../assets/images/InstaIcon.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  float: left;
+}
+
+.linkedin {
+  height: 100%;
+  width: 33.333%;
+  float: center;
+  background-image: url(../assets/images/LinkinIcon.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  float: left;
+}
+
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 5%;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: 'NimbusLight';
+
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: fixed;
+  width: 200px;
+  height: 100vh !important;
+  margin: -100px 0 0 -5%;
+  padding: 5%;
+  opacity: 98%;
+  padding-top: 125px;
+  box-sizing: content-box;
+  background: rgb(216, 216, 216, 0.9);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+  padding: 15px 0;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+#menu li:hover {
+  cursor: pointer;
+  padding-left: 5px;
+  color: rgba(255, 89, 36, 1);
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked~ul {
+  transform: none;
+}
+
+/*menu end */
+
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  animation: animate 20s linear infinite;
+  z-index: 1;
+
+}
+
+.slider .slide {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.slider .slide .caption {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  right: 60px;
+  padding: 30px;
+  background: rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+
+}
+
+.slider .slide .caption h2 {
+  margin: 0 0 20;
+  padding: 0;
+  color: #fff;
+  font-size: 48px;
+
+}
+
+.slider .slide .caption p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+
+}
+
+.slider .slide.slide1 {
+  background: url(../assets/images/slide1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.slider .slide.slide2 {
+  background: url(../assets/images/2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.slider .slide.slide3 {
+  background: url(../assets/images/3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+@keyframes animate {
+  0% {
+    left: 0;
+  }
+
+  20% {
+    left: 0;
+  }
+
+  25% {
+    left: -100%;
+  }
+
+  45% {
+    left: -100%;
+  }
+
+  50% {
+    left: -200%;
+  }
+
+  70% {
+    left: -200%;
+  }
+
+}
+
+.logoSK {
+  display: block;
+  display: block;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+  opacity: 0.9;
+}
+
+.homeContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 8;
+}
+
+nav h3 {
+  text-align: center;
+  padding: 15px;
+  font-family: 'NimbusRegita';
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.homeContainer h3{
+  text-align: center;
+}
+
+
+.left {
+  width: 50%;
+  float: left;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 50%;
+  float: right;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left h4 {
+  font-size: 26px;
+  font-family: 'NimbusBold';
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.left p {
+  padding-top: 5%;
+  font-size: 18px;
+  font-family: 'NimbusLight';
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.right h4 {
+  font-size: 26px;
+  font-family: 'NimbusBold';
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.right p {
+  font-size: 18px;
+  padding-top: 5%;
+  font-family: 'NimbusLight';
+  color: rgba(0, 0, 0, 0.9);
+
+
+}
+
+.saunaIcon {
+  width: 2.5%;
+  display: inline-block;
+  position: absolute;
+  left: auto;
+  /* padding-left: 3%; */
+  margin-left: 15px;
+  /* top: 24px; */
+  margin-top: -8px;
+}
+
+.appIcon {
+  width: 1.8%;
+  display: inline-block;
+  position: absolute;
+  left: auto;
+  /* padding-left: 3%; */
+  margin-left: 15px;
+  /* top: 24px; */
+  margin-top: -4px;
+}
+
+.button {
+  font-family: 'NimbusBold';
+  width: 60%;
+  background-color: rgba(255, 89, 36, 1);
+  border: none;
+  color: white;
+  padding: 11px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 13%;
+  cursor: pointer;
+  transition: .5s;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: rgba(237, 203, 147.1);
+  transform: scale(1.2);
+}
+
+.headerLogo:hover {
+  transform: scale(1.2);
+}
+
+/*footer start */
+.footer {
+  width: 100%;
+}
+
+.footer-wrapper {
+  background-color: #929292;
+  padding: 70px 0;
+
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer-column {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  font-family: 'NimbusBold';
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-column ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  font-size: 13px;
+  font-family: 'NimbusLight';
+  text-transform: capitalize;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  padding-left: 2px;
+}
+
+.footer-column .card-links a {
+  display: inline-block;
+  height: 20px;
+  width: 70px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  transition: all 0.5s ease;
+
+}
+
+.card-links {
+  margin-left: -5%;
+}
+
+/*footer end */
+
+/*mobile start footer */
+@media(max-width: 767px) {
+  .footer-column {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-column {
+    width: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*mobile end footer */
+
+/*showroom start*/
+.showroomContainer {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+.leftShow {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  float: left;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+#beneluxMap {
+  width: 60%;
+  margin-right: 5%;
+  display: block;
+
+}
+
+#waalre {
+  width: 60%;
+  margin-right: 5%;
+  display: none;
+
+}
+
+#amersfoort {
+  width: 60%;
+  margin-right: 5%;
+  display: none;
+
+}
+
+#alphen {
+  width: 60%;
+  margin-right: 5%;
+  display: none;
+
+}
+
+#wijchen {
+  width: 60%;
+  margin-right: 5%;
+  display: none;
+
+}
+
+#zeeland {
+  width: 60%;
+  margin-right: 5%;
+  display: none;
+
+}
+
+#zandhoven {
+  width: 60%;
+  margin-right: 5%;
+  display: none;
+
+}
+
+#waregem {
+  width: 60%;
+  margin-right: 5%;
+  display: none;
+
+}
+
+#genk {
+  width: 60%;
+  margin-right: 5%;
+  display: none;
+
+}
+
+.rightShow {
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.rightShow h2 {
+  text-align: left;
+  font-family: 'NimbusBold';
+  font-size: 24px;
+  padding-top: 10%;
+  padding-left: 8%;
+
+}
+
+.rightShow p {
+  font-family: 'NimbusLight';
+  text-align: left;
+  padding-top: 2%;
+  font-size: 18px;
+  padding-left: 8%;
+
+}
+
+.showroomOrange {
+  color: rgba(255, 89, 36, 1);
+
+}
+
+.rightShow ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.rightShow ul {
+  margin-top: 2%;
+  list-style-type: circle;
+  padding-left: 8%;
+}
+
+.rightShow ul li {
+  font-size: 18px;
+  font-family: 'NimbusLight';
+  text-transform: capitalize;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+
+}
+
+.rightShow ul li:hover {
+  padding-left: 2px;
+  cursor: pointer;
+  color: rgba(255, 89, 36, 1);
+}
+
+.bekijk {
+  font-family: 'NimbusBold';
+  color: rgba(255, 89, 36, 1);
+  text-decoration: underline;
+
+}
+
+.bekijk:hover {
+  cursor: pointer;
+}
+
+.dotWaalre1 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 10%;
+}
+
+.modal1 {
+  display: none;
+  /* Hidden by default */
+
+}
+
+.modal2 {
+  display: none;
+  /* Hidden by default */
+}
+
+.modal3 {
+  display: none;
+  /* Hidden by default */
+}
+
+.modal4 {
+  display: none;
+  /* Hidden by default */
+}
+
+.modal5 {
+  display: none;
+  /* Hidden by default */
+}
+
+.modal6 {
+  display: none;
+  /* Hidden by default */
+}
+
+.modal7 {
+  display: none;
+  /* Hidden by default */
+}
+
+.modal8 {
+  display: none;
+  /* Hidden by default */
+}
+
+.modalAll {
+  display: none;
+  /* Hidden by default */
+}
+
+.modalContact {
+  display: none;
+  /* Hidden by default */
+
+}
+
+/* The Modal (background) */
+.modal {
+
+  position: fixed;
+  /* Stay in place */
+  z-index: 100;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #f2f4f5;
+  margin: auto;
+  position: relative;
+  width: 80%;
+  height: 85%;
+  overflow: hidden;
+
+}
+
+.teamSK {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+:root {
+  --primary-color: #010712;
+  --secondary-color: #818386;
+  --bg-color: #f2f4f5;
+  --button-color: #3B3636;
+  --h1-color: #3F444C;
+}
+
+/*mobile end */
+
+/*contact start */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+}
+
+.left-col {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.left-col1 {
+
+  background-image: url("../assets/images/showroomWaalre.jpg");
+}
+
+.left-col2 {
+
+  background-image: url("../assets/images/amer.jpg");
+}
+
+.left-col3 {
+
+  background-image: url("../assets/images/alphen.jpg");
+}
+
+.left-col4 {
+
+  background-image: url("../assets/images/wijchen.jpg");
+}
+
+.left-col5 {
+
+  background-image: url("../assets/images/zeeland.jpg");
+}
+
+.left-col6 {
+
+  background-image: url("../assets/images/zand.jpg");
+}
+
+.left-col7 {
+
+  background-image: url("../assets/images/warem.jpg");
+}
+
+.left-col8 {
+
+  background-image: url("../assets/images/genk.jpg");
+}
+
+
+
+.logo {
+  width: 6em;
+  padding: 1.5rem;
+}
+
+.right-col {
+  background: var(--bg-color);
+  /* width: 50%; */
+  height: 100%;
+  padding: 2rem 2rem;
+}
+
+.modal h1,
+.modal label,
+.modal button,
+.description {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.modal h1 {
+  color: var(--h1-color);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+}
+
+.modal p {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+  width: 40vw;
+  margin: 0.25rem 0;
+}
+
+.modal label,
+.description {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 0.625rem;
+}
+
+.modal form {
+  width: 31.25rem;
+  position: relative;
+  margin-top: .5rem;
+  padding: 1rem 0;
+}
+
+.modal input,
+.modal textarea,
+.modal label {
+  width: 40vw;
+  display: block;
+}
+
+.modal p,
+placeholder,
+.modal input,
+.modal textarea {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.modal input::placeholder,
+.modal textarea::placeholder {
+  color: var(--primary-color);
+}
+
+.modal input,
+.modal textarea {
+  color: var(--primary-color);
+  font-weight: 500;
+  background: var(--bg-color);
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.modal textarea {
+  resize: none;
+}
+
+.modal button {
+  text-transform: uppercase;
+  font-weight: 300;
+  background: var(--button-color);
+  color: var(--bg-color);
+  width: 10rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal input:hover,
+.modal textarea:hover,
+.modal button:hover {
+  opacity: 0.5;
+}
+
+.modal button:active {
+  opacity: 0.8;
+}
+
+.description {
+  margin-left: 1.25rem;
+}
+
+.klantenService {
+  width: 40%;
+  height: 100%;
+  float: right;
+  padding: 2rem 2rem;
+}
+
+.phonenumber {
+  color: rgba(255, 89, 36, 1);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tijden p {
+  color: var(--h1-color);
+  width: 50%;
+}
+
+.tijden a {
+  float: right;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+/*contact end */
+
+
+/*mobile version starts here ------
+-----------------------------------*/
+@media screen and (max-width: 374px) {
+
+  /*---footer start---*/
+  .container .slider .slide .caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    padding: 15px;
+  }
+
+  .container .slider .slide .caption h2 {
+    margin: 0 0 10;
+    font-size: 30px;
+  }
+
+  .container .slider .slide .caption p {
+    font-size: 16px;
+  }
+
+  /*---footer end---*/
+
+  /*---index page start  ---*/
+  .headerIcon1 {
+    width: 7%;
+    right: 15%;
+  }
+
+  .headerIcon2 {
+    width: 7%;
+    right: 4%;
+  }
+
+  .headerLogo {
+    width: 11%;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 10%;
+    opacity: 0.9;
+  }
+
+  .logoSK {
+    width: 80%;
+    margin-top: 46%;
+  }
+
+  .right {
+    float: none;
+    height: 3%;
+    margin-left: 83px;
+    margin-bottom: 80px;
+  }
+
+  .left {
+    float: none;
+    width: 80%;
+    height: 43%;
+    padding-left: 90px;
+  }
+
+  .mainHome {
+    height: 160vh;
+  }
+
+  .button {
+    height: 35px;
+    width: 86%;
+  }
+
+  .saunaIcon {
+    width: 9%;
+
+  }
+
+  .appIcon {
+    width: 6%;
+    margin-top: -35px;
+    margin-left: -48px;
+  }
+
+  .rightShow ul {
+    margin-top: 5%;
+    padding-left: 8%;
+  }
+
+  .rightShow h2 {
+    font-size: 20px;
+    padding-top: 14px;
+  }
+
+  .rightShow p {
+    padding-top: 8%;
+  }
+
+  /*maps size adjust*/
+  #beneluxMap {
+    width: 118%;
+    margin-right: -12%;
+    padding-bottom: 80%;
+  }
+
+  #waalre {
+    width: 118%;
+    margin-right: -12%;
+    padding-bottom: 80%;
+
+  }
+
+  #amersfoort {
+    width: 118%;
+    margin-right: -12%;
+    padding-bottom: 80%;
+  }
+
+  #alphen {
+    width: 118%;
+    margin-right: -12%;
+    padding-bottom: 80%;
+  }
+
+  #wijchen {
+    width: 118%;
+    margin-right: -12%;
+    padding-bottom: 80%;
+  }
+
+  #zeeland {
+    width: 118%;
+    margin-right: -12%;
+    padding-bottom: 80%;
+  }
+
+  #zandhoven {
+    width: 118%;
+    margin-right: -12%;
+    padding-bottom: 80%;
+  }
+
+  #waregem {
+    width: 118%;
+    margin-right: -12%;
+    padding-bottom: 80%;
+  }
+
+  #genk {
+    width: 118%;
+    margin-right: -12%;
+    padding-bottom: 80%;
+  }
+
+  .close {
+    right: 5%;
+  }
+
+  .modal h1 {
+    font-size: 15px;
+    width: 40%;
+  }
+
+  .modal p {
+    padding-top: 10px;
+  }
+
+  .modal form {
+    padding: 0.3rem 0;
+  }
+
+  .modal button {
+    padding: none;
+    width: 4.4rem;
+  }
+
+  .modal h1,
+  .modal label,
+  .modal button,
+  .description {
+    letter-spacing: none;
+  }
+
+  .right-col {
+    padding: 0.8rem 0.8rem;
+  }
+
+  .modal input,
+  .modal textarea {
+    height: 37px;
+    margin-bottom: 0.8 rem;
+    padding: 0.5 rem 0px;
+  }
+
+  .modal input,
+  .modal textarea,
+  .modal label {
+    display: flex;
+  }
+
+  .teamSK {
+    width: 500px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container .slider .slide .caption {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      padding: 20px;
+    }
+
+    .container .slider .slide .caption h2 {
+      margin: 0 0 10;
+      font-size: 30px;
+    }
+
+    .container .slider .slide .caption p {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .facebook {
+      height: 100%;
+      width: 33.333%;
+      float: center;
+      background-color: rgba(255, 255, 255, 0);
+      background-image: url(../assets/images/facebookIcon.png);
+      background-repeat: no-repeat;
+      background-size: 25px;
+      float: left;
+    }
+
+    .insta {
+      height: 100%;
+      width: 33.333%;
+      float: Center;
+      background-image: url(../assets/images/InstaIcon.png);
+      background-repeat: no-repeat;
+      background-size: 25px;
+      float: left;
+    }
+
+    .linkedin {
+      height: 100%;
+      width: 33.333%;
+      float: center;
+      background-image: url(../assets/images/LinkinIcon.png);
+      background-repeat: no-repeat;
+      background-size: 25px;
+      float: left;
+    }
+  }
+}

@@ -1,0 +1,329 @@
+@font-face {
+  font-family: 'NimbusBold';
+  src: url('../assets/fonts/NimbusBold.otf');
+}
+
+@font-face {
+  font-family: 'NimbusLight';
+  src: url('../assets/fonts/NimbusLight.ttf');
+}
+
+@font-face {
+  font-family: 'NimbusRegita';
+  src: url('../assets/fonts/NimbusRegita.otf');
+}
+
+
+.coverimg {
+   font-family: 'NimbusBold';
+   background-image: 
+   linear-gradient(rgba(23, 23, 23, 0.4), rgba(23, 23, 23, 0.4)),
+   url(../assets/images/teamwork.jpg);
+   width:100%;
+   height: 80vh;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color:white;
+   background-size: cover;
+
+}
+
+.backgroundImage {
+  width: auto;
+  height: 105%;
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ConAbout {
+  padding-bottom: 13%;
+  font-size: 102%;
+  margin: auto;
+  width: 75%;
+  height: 20%;
+
+}
+
+.aboutUsTitle {
+  font-family: 'NimbusBold';
+  font-weight: bold;
+  font-size: 120%;
+  Margin: auto;
+
+}
+
+.aboutUsParagraph {
+  font-family: 'NimbusLight';
+  font-size: 90%;
+}
+
+
+.aboutUsTitle .finseLine {
+  width: 100px;
+  border: 2px solid orange;
+  z-index: 1;
+  transform: translateX(0px);
+}
+
+
+.ContInfo1 {
+  font-size: 145%;
+  margin: auto;
+  padding-top: 5%;
+  width: 75%;
+  display: flex;
+}
+
+.h2 {
+  font-family: 'NimbusBlod';
+  padding-top: 10%;
+
+}
+
+.paragraph1 {
+  font-family: 'NimbusLight';
+  ;
+  width: 60%;
+  height: 100%;
+  flex: 1;
+}
+
+.paragraph1 .finseLine {
+
+  width: 65px;
+  border: 1px solid orange;
+  z-index: 1;
+  transform: translateX(0px);
+}
+
+
+.finseSaunaimg {
+
+  width: 40%;
+  height: 150%;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../assets/images/finseSaunas.png);
+
+}
+
+
+.ContInfo2 {
+  font-size: 100%;
+  margin: auto;
+  padding-top: 1%;
+  width: 75%;
+  display: flex;
+  padding-bottom: 1%;
+}
+
+.finsebutton:hover {
+  background-color: rgba(237, 203, 147.1);
+  transform: scale(0.95);
+}
+
+.paragraph2 {
+  font-family: 'NimbusLight';
+  font-size: 140%;
+  width: 60%;
+  height: 100%;
+  padding-top: 12%;
+}
+
+
+.paragraph2 .finseLine {
+  width: 65px;
+  border: 2px solid orange;
+  z-index: 1;
+  transform: translateX(0px);
+}
+
+.infraroodSaunaimg {
+  margin-top: 10%;
+  width: 64%;
+  height: 130%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../assets/images/infraroodSaunas.png);
+
+}
+
+
+/* the style of the collapsible */
+
+.collapsible {
+  font-family: 'NimbusBold';
+  color: #444;
+  cursor: pointer;
+  padding: 1%;
+  width: 100%;
+  border: none;
+  text-align: middle;
+  outline: none;
+  font-size: 20px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #FF5924;
+  color: white;
+}
+
+/* hidden by default */
+.content {
+  font-family: 'NimbusLight';
+  font-size: 120%;
+  padding: 2%;
+  display: none;
+  overflow: hidden;
+}
+
+.AboutText {
+  padding: 0.4%;
+  padding-left: 0.5;
+  text-align: center;
+  overflow: auto;
+}
+
+.footer {
+  height: 20vh;
+}
+
+
+/* Mobile version (still not finshed) */
+@media screen and (max-width: 400px) {
+
+  .headerIcon1 {
+    width: 7%;
+    right: 15%;
+  }
+
+  .headerIcon2 {
+    width: 7%;
+    right: 4%;
+  }
+
+  .teamSK {
+    width: 500px;
+  }
+
+  .headerLogo {
+    width: 11%;
+  }
+
+  .headerLogo {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 10%;
+    opacity: 0.9;
+  }
+
+
+  .collapsible {
+    font-size: 15px;
+  }
+
+
+  /* hidden by default */
+  .content {
+    font-family: 'NimbusLight';
+    font-size: 90%;
+    padding: 3%;
+    display: none;
+    overflow: hidden;
+  }
+
+  .AboutText {
+    padding: 0.4%;
+    padding-left: 0.5;
+    text-align: center;
+    overflow: auto;
+  }
+
+  .coverimg {
+    width: 100%;
+    height: 20%;
+    margin: auto;
+
+  }
+
+  .backgroundImage {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  .ConAbout {
+    font-size: 102%;
+    margin: auto;
+    width: 75%;
+    height: 45%;
+    padding-bottom: 5%;
+  }
+
+
+  .ContInfo1 {
+    height: 60%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    display: flex;
+  }
+
+  .ContInfo2 {
+    height: 50%;
+    padding-bottom: 10%;
+  }
+
+}
+
+.f{
+  width: 40%; 
+  height: auto;
+}
+
+/*mobile version */
+@media screen and (max-width: 374px){
+  .aboutUsParagraph{
+    font-size: 113%;
+  }
+  .ContInfo1{
+    display: inline-block;
+    padding-left: 40px;
+
+  }
+  .questions{
+    font-size: 25px;
+  }
+  .collapsible{
+    font-size: 17px;
+  }
+  .f{
+    width: 300px;
+    padding-top: 270px;
+  }
+  .paragraph1{
+    height: 60px;
+    width: 300px;
+  }
+  .ContInfo2{
+    display:inline-block;
+    padding-left: 40px;
+  }
+  .paragraph2{
+    height: 60px;
+    width: 300px;
+  }
+  .fg{
+    display: none;
+  }
+
+}

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/homepage.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <title>Sauna Koning v2</title>
+
+</head>
+
+<body>
+  <!--menu ,bar start -->
+  <div class="mainHome">
+    <nav id="nav" role="navigation">
+      <div id="menuToggle">
+
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="#scrollHome">
+            <li>Showrooms</li>
+          </a>
+          <a href="html/choss.html">
+            <li>Sauna's</li>
+          </a>
+                    <a href="html/about.html">
+            <li>About Us</li>
+          </a>
+                    <a href="html/Blog-CoomingSoon.html">
+            <li>Blog</li>
+          </a>
+          <a href="/html/reference.html">
+            <li>Referenties</li>
+          </a>
+          <a onclick="contactModalF()" href="#">
+            <li>Contact</li>
+          </a>
+
+          <div class="socialIcons">
+            <div class="facebook" onclick="location.href='https://www.facebook.com/Saunakoning-155835287856773/'">
+
+            </div>
+            <div class="insta" onclick="location.href='https://www.instagram.com/saunakoning/'">
+
+            </div>
+            <div class="linkedin" onclick="location.href='https://nl.linkedin.com/in/michiel-broker-0a1a95a'">
+
+            </div>
+
+          </div>
+        </ul>
+       
+        <!--main index start -->
+      </div>
+      <a href="index.html"><img class="headerLogo" src="assets/images/headerLogo.png"></a>
+      <img class="headerIcon1 headerIcon" src="assets/images/cartIcon.svg">
+      <img class="headerIcon2 headerIcon" src="assets/images/personIconsvg.svg">
+    </nav>
+ <!--menu end -->
+    <div class="slider">
+
+      <div class="slide slide1">
+
+      </div>
+      <div class="slide slide2">
+
+      </div>
+      <div class="slide slide3">
+
+      </div>
+
+    </div>
+    <div class="homeContainer">
+      <img class="logoSK" src="assets/images/logoSK.png">
+      <h3>"De sauna specialist van de Benelux"</h3>
+
+      <div class="left">
+        <div>
+          <h4>BROWSE OUR SAUNAS <img class="saunaIcon" src="assets/images/saunaIcon.png"></h4>
+          <p>Choose between Finse saunas or Infrared cabin </p>
+          <a href="html/choss.html" class="button">SAUNAS</a>
+        </div>
+
+      </div>
+      <div class="right">
+        <div>
+          <h4>MAKE AN APPOINTMENT <img class="appIcon" src="assets/images/appointmentIcon.svg"></h4>
+          <p>Make an appointment for our showroom </p>
+          <a href="#scrollHome" class="button">SHOWROOMS</a>
+        </div>
+      </div>
+    </div>
+    <span id="scrollHome"></span>
+  </div>
+  <!--main index end-->
+
+  <!-- showroom section start-->
+  <div class="showroomContainer">
+    <div class="leftShow">
+      <img id="beneluxMap" src="assets/images/saunaMap.png">
+      <img id="waalre" src="assets/images/waalre.png">
+      <img id="amersfoort" src="assets/images/amersfoort.png">
+      <img id="alphen" src="assets/images/alphen.png">
+      <img id="wijchen" src="assets/images/wijchen.png">
+      <img id="zeeland" src="assets/images/zeeland.png">
+      <img id="zandhoven" src="assets/images/zandhoven.png">
+      <img id="waregem" src="assets/images/waregem.png">
+      <img id="genk" src="assets/images/genk.png">
+
+    </div>
+
+    <div class="rightShow">
+      <h2>BEZOEK ONZE <span class="showroomOrange">SHOWROOM</span></h2>
+      <p>Altijd een showroom dichtbij!</p>
+      <ul>
+        <li onclick="waalreModalF()" onmouseover="waalreF()">&#8226; Waalre</li>
+        <li onclick="amerModalF()" onmouseover="amersfoortF()">&#8226; Amersfoort</li>
+        <li onclick="alphenModalF()" onmouseover="alphenF()">&#8226; Alphen a/d Rijn</li>
+        <li onclick="wijchenModalF()" onmouseover="wijchenF()">&#8226; Wijchen</li>
+        <li onclick="zeeModalF()" onmouseover="zeelandF()">&#8226; Zeeland</li>
+        <li onclick="zandModalF()" onmouseover="zandhovenF()">&#8226; Zandhoven</li>
+        <li onclick="warModalF()" onmouseover="waregemF()">&#8226; Waregem</li>
+        <li onclick="genkModalF()" onmouseover="genkF()">&#8226; Genk</li>
+      </ul>
+      <p class="bekijk">BEKIJK AL ONZE SHOWROOMS</p>
+
+    </div>
+  </div>
+  <!-- showroom section end-->
+  <!--footer start -->
+  <div class="footer">
+    <footer class="footer-wrapper">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>Sauna Assortiment</h4>
+            <ul>
+              <li><a href="#">Finse binnen sauna's</a></li>
+              <li><a href="#">Finse buiten sauna's</a></li>
+              <li><a href="#">Infrarood sauna's</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Handige pagina's</h4>
+            <ul>
+              <li><a href="#">Algemene sauna</a></li>
+              <li><a href="#">Informatie</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Algemene voorwaarden</a></li>
+              <li><a href="#">Privacy beleid</a></li>
+              <li><a href="#">Leverings Informatie</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>onze showrooms</h4>
+            <ul>
+              <li><a href="#">Showroom Amersfoort</a></li>
+              <li><a href="#">Showroom Alphen a.d. Rijn</a></li>
+              <li><a href="#">Showroom Wijchen</a></li>
+              <li><a href="#">Showroom Waalre</a></li>
+              <li><a href="#">Showroom Waregem (BE)</a></li>
+              <li><a href="#">Showroom Zandhoven (BE)</a></li>
+              <li><a href="#">Showroom Genk (BE)</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>DIRECT CONTACT</h4>
+            <ul>
+              <li><a href="#">Bel direct voor persoonlijk advies of bezoek onze showroom.</a></li>
+              <li><a href="#">NL 040 - 707 45 49</a></li>
+              <li><a href="#">BE 033 367 4575</a></li>
+
+            </ul>
+          </div>
+          <div class="footer-column">
+            <div class="card-links">
+              <a href="#"><i class="fab fa-cc-visa" style="font-size: 25px;"></i></a>
+              <a href="#"><i class="fab fa-cc-stripe" style="font-size: 25px;"></i></a>
+              <a href="#"><i class="fab fa-cc-paypal" style="font-size: 25px;"></i></a>
+              <a href="#"><i class="fab fa-cc-mastercard" style="font-size: 25px;"></i></a>
+              <a href="#"><i class="fab fa-cc-amex" style="font-size: 25px;"></i></a>
+              <a href="#"><i class="fab fa-cc-discover" style="font-size: 25px;"></i></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- footer end -->
+
+  <!--showroom modals start  -->
+
+  <!-- The Modal -->
+  <div class="modal1" id="modal1">
+    <div id="waalreModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">×</span>
+        <div class="contact-container">
+          <div class="left-col left-col1">
+            <img class="logo" src="assets/images/headerLogo.png" />
+          </div>
+          <div class="right-col">
+
+            <h1>WAALRE SHOWROOM</h1>
+            <p>Planning to visit our showroom in Waalre? Fill this form in to plan a reservation!</p>
+
+            <form id="contact-form" method="post">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+              <label for="email">Time and Date</label>
+              <input type="email" id="email" name="email" placeholder="Time and Date of Reservation" required>
+
+              <label for="message">Message</label>
+              <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+              <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button>
+              <!--</a>-->
+              <button type="submit" id="submit2" name="submit">Maps</button>
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal2" id="modal2">
+    <div id="waalreModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="close2" class="close">×</span>
+
+        <div class="contact-container">
+          <div class="left-col left-col2">
+            <img class="logo" src="assets/images/headerLogo.png" />
+          </div>
+          <div class="right-col">
+
+            <h1>AMERSFOORT SHOWROOM</h1>
+            <p>Planning to visit our showroom in Waalre? Fill this form in to plan a reservation!</p>
+
+            <form id="contact-form" method="post">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+              <label for="email">Time and Date</label>
+              <input type="email" id="email" name="email" placeholder="Time and Date of Reservation" required>
+
+              <label for="message">Message</label>
+              <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+              <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button>
+              <!--</a>-->
+              <button type="submit" id="submit2" name="submit">Maps</button>
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal3" id="modal3">
+    <div id="waalreModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="close3" class="close">×</span>
+
+        <div class="contact-container">
+          <div class="left-col left-col3">
+            <img class="logo" src="assets/images/headerLogo.png" />
+          </div>
+          <div class="right-col">
+
+            <h1>ALPHEN A/D RIJN SHOWROOM</h1>
+            <p>Planning to visit our showroom in Waalre? Fill this form in to plan a reservation!</p>
+
+            <form id="contact-form" method="post">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+              <label for="email">Time and Date</label>
+              <input type="email" id="email" name="email" placeholder="Time and Date of Reservation" required>
+
+              <label for="message">Message</label>
+              <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+              <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button>
+              <!--</a>-->
+              <button type="submit" id="submit2" name="submit">Maps</button>
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal4" id="modal4">
+    <div id="waalreModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="close4" class="close">×</span>
+
+        <div class="contact-container">
+          <div class="left-col left-col4">
+            <img class="logo" src="assets/images/headerLogo.png" />
+          </div>
+          <div class="right-col">
+
+            <h1>WIJCHEN SHOWROOM</h1>
+            <p>Planning to visit our showroom in Waalre? Fill this form in to plan a reservation!</p>
+
+            <form id="contact-form" method="post">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+              <label for="email">Time and Date</label>
+              <input type="email" id="email" name="email" placeholder="Time and Date of Reservation" required>
+
+              <label for="message">Message</label>
+              <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+              <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button>
+              <!--</a>-->
+              <button type="submit" id="submit2" name="submit">Maps</button>
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal5" id="modal5">
+    <div id="waalreModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="close5" class="close">×</span>
+
+        <div class="contact-container">
+          <div class="left-col left-col5">
+            <img class="logo" src="assets/images/headerLogo.png" />
+          </div>
+          <div class="right-col">
+
+            <h1>ZEELAND SHOWROOM</h1>
+            <p>Planning to visit our showroom in Waalre? Fill this form in to plan a reservation!</p>
+
+            <form id="contact-form" method="post">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+              <label for="email">Time and Date</label>
+              <input type="email" id="email" name="email" placeholder="Time and Date of Reservation" required>
+
+              <label for="message">Message</label>
+              <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+              <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button>
+              <!--</a>-->
+              <button type="submit" id="submit2" name="submit">Maps</button>
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal6" id="modal6">
+    <div id="waalreModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="close6" class="close">×</span>
+        <div class="contact-container">
+          <div class="left-col left-col6">
+            <img class="logo" src="assets/images/headerLogo.png" />
+          </div>
+          <div class="right-col">
+            <h1>ZANDHOVEN SHOWROOM</h1>
+            <p>Planning to visit our showroom in Waalre? Fill this form in to plan a reservation!</p>
+
+            <form id="contact-form" method="post">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+              <label for="email">Time and Date</label>
+              <input type="email" id="email" name="email" placeholder="Time and Date of Reservation" required>
+              <label for="message">Message</label>
+              <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+              <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button>
+              <!--</a>-->
+              <button type="submit" id="submit2" name="submit">Maps</button>
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal7" id="modal7">
+    <div id="waalreModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="close7" class="close">×</span>
+        <div class="contact-container">
+          <div class="left-col left-col7">
+            <img class="logo" src="assets/images/headerLogo.png" />
+          </div>
+          <div class="right-col">
+            <h1>WAREGEM SHOWROOM</h1>
+            <p>Planning to visit our showroom in Waalre? Fill this form in to plan a reservation!</p>
+            <form id="contact-form" method="post">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+              <label for="email">Time and Date</label>
+              <input type="email" id="email" name="email" placeholder="Time and Date of Reservation" required>
+
+              <label for="message">Message</label>
+              <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+              <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button>
+              <!--</a>-->
+              <button type="submit" id="submit2" name="submit">Maps</button>
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div class="modal8" id="modal8">
+    <div id="waalreModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="close8" class="close">×</span>
+        <div class="contact-container">
+          <div class="left-col left-col8">
+            <img class="logo" src="assets/images/headerLogo.png" />
+          </div>
+          <div class="right-col">
+            <h1>GENK SHOWROOM</h1>
+            <p>Planning to visit our showroom in Waalre? Fill this form in to plan a reservation!</p>
+            <form id="contact-form" method="post">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+              <label for="email">Time and Date</label>
+              <input type="email" id="email" name="email" placeholder="Time and Date of Reservation" required>
+              <label for="message">Message</label>
+              <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+              <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button>
+              <!--</a>-->
+              <button type="submit" id="submit2" name="submit">Maps</button>
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div class="modalAll" id="modalAll">
+    <div id="waalreModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeAll" class="close">×</span>
+        <div class="contact-container">
+          <div class="left-col">
+            <img class="logo" src="assets/images/headerLogo.png" />
+          </div>
+          <div class="right-col">
+            <h1>AMERSFOORT SHOWROOM</h1>
+            <p>Planning to visit our showroom in Waalre? Fill this form in to plan a reservation!</p>
+            <form id="contact-form" method="post">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+              <label for="email">Time and Date</label>
+              <input type="email" id="email" name="email" placeholder="Time and Date of Reservation" required>
+              <label for="message">Message</label>
+              <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+              <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button>
+              <!--</a>-->
+              <button type="submit" id="submit2" name="submit">Maps</button>
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modalContact" id="modalContact">
+    <div id="waalreModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeContact" class="close">×</span>
+        <div class="contact-container">
+          <div class="right-col">
+            <h1>Contact us!</h1>
+            <p>Contact us by filling in this form or call us!</p>
+            <form id="contact-form" method="post">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+              <input type="tel" id="email" name="phone" placeholder="Your Phone Number" required>
+              <label for="message">Question</label>
+              <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+              <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button>
+              <!--</a>-->
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+          </div>
+          <img class="teamSK" src="assets/images/teamSK.jpg">
+          <div class="klantenService">
+            <h1>Klanten Service</h1>
+            <p>Telefonisch contact:</p>
+            <br>
+            <p>NL: <a class="phonenumber" href="tel:040 707 4549">040 707 4549</a></p>
+            <p>BE: <a class="phonenumber" href="tel:033 36 74 75">033 36 74 75</a></p>
+            <br>
+            <div class="tijden">
+              <p>Ma-Wo: <a href="">09:00 - 17:00</a></p>
+              <p>Do: <a href="">Gesloten</a></p>
+              <p>Vr: <a href="">09:00 - 17:00</a></p>
+              <p>Za: <a href="">10:00 - 17:00</a></p>
+              <p>Zo: <a href="">11:00 - 17:00</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--showroom modals ends-->
+
+
+  <!--the nav bar js link-->
+  <script src="scripts/navBar.js"></script>
+
+  <!--interaction map js link-->
+  <script src="scripts/interactionMap.js"></script>
+
+  <!-- show room appoitment js link-->
+  <script src="scripts/showRoomAppoitment.js"></script>
+
+  <!-- modal boxes js link-->
+  <script src="scripts/modalPopUpBox.js"></script>
+
+
+</body>
+
+</html>

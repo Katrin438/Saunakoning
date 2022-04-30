@@ -1,0 +1,90 @@
+@font-face {
+   font-family: 'NimbusBold';
+   src: url('../assets/fonts/NimbusBold.otf');
+ }
+ 
+ @font-face {
+   font-family: 'NimbusLight';
+   src: url('../assets/fonts/NimbusLight.ttf');
+ }
+ 
+ @font-face {
+   font-family: 'NimbusRegita';
+   src: url('../assets/fonts/NimbusRegita.otf');
+ }
+
+header{
+   font-family: 'NimbusBold';
+   background-image: 
+   linear-gradient(rgba(23, 23, 23, 0.4), rgba(23, 23, 23, 0.4)),
+   url(../assets/images/3.png);
+   width:100%;
+   height: 80vh;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color:white
+ 
+
+}
+
+header h1{
+   text-transform: uppercase;
+  font-size: 3rem;
+   
+}
+
+section{
+   font-family: 'NimbusBold';
+   width:100%;
+   min-height: 100vh;
+   margin: 4rem 0;
+   justify-content: center;
+}
+
+.cards-wrapper{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: center;
+
+}
+
+.card{
+   margin: 2rem;
+   
+}
+
+
+.card h3{
+   
+   margin: 1rem 0 
+}
+
+.card p {
+   font-family: 'NimbusLight';
+}
+
+
+.card img {
+   width: 300px;
+  
+}
+
+.dot{
+   width: 10px;
+   height: 10px;
+   background-color: rgb(119, 119, 119);
+   margin: 0.4rem;
+   border-radius: 100%;
+
+}
+
+.dots{
+   display: flex;
+}
+
+.active {
+   background-color: rgb(245, 87, 13);
+}
